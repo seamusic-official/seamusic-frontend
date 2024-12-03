@@ -1,7 +1,5 @@
 import React from 'react';
-import { DropdownMenu } from '@/entities/menu';
 import { useRouter } from 'next/navigation';
-import { DefaultButton } from '@/shared/ui/buttons';
 
 export function NavBar(reference: any) {
 	const navigate = useRouter();

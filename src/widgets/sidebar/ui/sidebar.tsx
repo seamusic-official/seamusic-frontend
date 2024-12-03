@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import des from '@/shared/assets/everydesigner.png';
-import { DecorText } from '@/shared/ui/decor-text';
 
 export function Sidebar() {
 	return (
@@ -171,15 +169,6 @@ export function Sidebar() {
 						</h2>
 					</Link>
 				</button>
-			</div>
-
-			<div>
-				<h2 className="font-semibold text-md ">
-					Project TGC - <DecorText font="semibold">@seamusicmgmt</DecorText>
-				</h2>
-				<h2 className="font-semibold text-md ">
-					I ♥ (developer) - <DecorText font="extrabold">@whyspacy</DecorText>
-				</h2>
 			</div>
 		</div>
 	);

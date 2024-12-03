@@ -1,10 +1,15 @@
 'use client';
 
-import { Hello } from '@/pages/hello';
-import { HelloLayout, RouterLayoutWithStaticPlayer } from '@/shared/layouts';
+import { HelloLayout } from '@/shared/layouts';
 
 const Page = () => {
-	return <HelloLayout><Hello/></HelloLayout>;
+	return (
+	<HelloLayout>
+		<div>
+			<h1>Home</h1>
+		</div>
+	</HelloLayout>
+	);
 };
 
 export default Page;
