@@ -2,11 +2,11 @@
 
 import styles from './AuthLeftBlock.module.scss';
 import Image from 'next/image';
-import imgTopLeftSrc from '../../../../../public/auth/ContentStadium.png';
-import imgTopRighttSrc from '../../../../../public/auth/ContentBiilie.png';
-import imgBottomLefTopSrc from '../../../../../public/auth/ContentGirl.png';
-import imgBottomLefBottomSrc from '../../../../../public/auth/Logo.png';
-import imgBottomRightBottomSrc from '../../../../../public/auth/ContentGlassEffect.png';
+import imgTopLeftSrc from '/public/auth/ContentStadium.png';
+import imgTopRighttSrc from '/public/auth/ContentBiilie.png';
+import imgBottomLefTopSrc from '/public/auth/ContentGirl.png';
+import imgBottomLefBottomSrc from '/public/auth/Logo.png';
+import imgBottomRightBottomSrc from '/public/auth/ContentGlassEffect.png';
 import { TEXT_AUTH } from '@/constants/constants';
 
 export function AuthLeftBlock() {
