@@ -1,0 +1,41 @@
+.main {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 278px auto;
+  grid-template-rows: 60px auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 46px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 740px;
+
+  .contentTop {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .contentTopLeft {
+      border-radius: 40px;
+      width: 895px;
+      height: 325px;
+
+      background: #282828;
+    }
+    .contentTopRight {
+      border-radius: 40px;
+      width: 587px;
+      height: 325px;
+
+      background: #282828;
+    }
+  }
+
+  .content {
+    background-color: rgb(0, 238, 255);
+    overflow: auto;
+  }
+}
