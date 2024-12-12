@@ -1,4 +1,4 @@
-import { MainMenuItems } from "@/shared/types/types";
+import { MainMenuItems, TagsType, TopImages } from "@/shared/types/types";
 import imgHomeImage from '@/shared/assets/main/home_line.svg';
 import imgHomeImageWhite from '@/shared/assets/main/home_line_white.svg';
 import imgMessagesImage from '@/shared/assets/main/messages_line.svg';
@@ -11,6 +11,8 @@ import imgSettingsImage from '@/shared/assets/main/settings_line.svg';
 import imgSettingsImageWhite from '@/shared/assets/main/settings_line_white.svg';
 import imgLogoutImage from '@/shared/assets/main/logout_line.svg';
 import imgLogoutImageWhite from '@/shared/assets/main/logout_line_white.svg';
+import img001 from '@/shared/assets/main/foto001.png';
+import img002 from '@/shared/assets/main/foto002.png';
 
 export const TEXT_AUTH = {
   left_title: "Self-expression for everyone",
@@ -86,3 +88,32 @@ export const MAIN_MENU_ITEMS: MainMenuItems = {
     }
   ]
 };
+
+export const TAGS: TagsType = {
+  contentTopLeftTags: [
+    {id: '001', value: 'lyrics'},
+    {id: '002', value: 'memories'},
+    {id: '003', value: 'pop'},
+    {id: '004', value: 'romance'},
+    {id: '005', value: 'trends'},
+  ],
+};
+
+export const CONTENT_TOP_LEFT_IMAGES: Array<TopImages> = [
+  {
+    id: '001',
+    data: {
+      id: '001',
+      value: 'For You: Beats',
+      image: img001
+    }
+  },
+  {
+    id: '002',
+    data: {
+      id: '002',
+      value: 'For You: Tracks',
+      image: img002
+    }
+  }
+];
