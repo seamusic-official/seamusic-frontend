@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image';
-import navImgSrc from '/public/main/Frame 30.png';
+import navImgSrc from '@/shared/assets/main/Frame 30.png';
 import styles from './MainMenu.module.scss';
 import { MAIN_MENU_ITEMS } from '@/constants/constants';
 import { NavItem } from '../nav-item/NavItem';

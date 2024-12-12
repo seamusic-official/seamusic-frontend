@@ -1,16 +1,16 @@
 import { MainMenuItems } from "@/shared/types/types";
-import imgHomeImage from '/public/main/home_line.svg';
-import imgHomeImageWhite from '/public/main/home_line_white.svg';
-import imgMessagesImage from '/public/main/messages_line.svg';
-import imgMessagesImageWhite from '/public/main/messages_line_white.svg';
-import imgDashboardImage from '/public/main/dashboard_line.svg';
-import imgDashboardImageWhite from '/public/main/dashboard_line_white.svg';
-import imgPlaylistsImage from '/public/main/playlists_line.svg';
-import imgPlaylistsImageWhite from '/public/main/playlists_line_white.svg';
-import imgSettingsImage from '/public/main/settings_line.svg';
-import imgSettingsImageWhite from '/public/main/settings_line_white.svg';
-import imgLogoutImage from '/public/main/logout_line.svg';
-import imgLogoutImageWhite from '/public/main/logout_line_white.svg';
+import imgHomeImage from '@/shared/assets/main/home_line.svg';
+import imgHomeImageWhite from '@/shared/assets/main/home_line_white.svg';
+import imgMessagesImage from '@/shared/assets/main/messages_line.svg';
+import imgMessagesImageWhite from '@/shared/assets/main/messages_line_white.svg';
+import imgDashboardImage from '@/shared/assets/main/dashboard_line.svg';
+import imgDashboardImageWhite from '@/shared/assets/main/dashboard_line_white.svg';
+import imgPlaylistsImage from '@/shared/assets/main/playlists_line.svg';
+import imgPlaylistsImageWhite from '@/shared/assets/main/playlists_line_white.svg';
+import imgSettingsImage from '@/shared/assets/main/settings_line.svg';
+import imgSettingsImageWhite from '@/shared/assets/main/settings_line_white.svg';
+import imgLogoutImage from '@/shared/assets/main/logout_line.svg';
+import imgLogoutImageWhite from '@/shared/assets/main/logout_line_white.svg';
 
 export const TEXT_AUTH = {
   left_title: "Self-expression for everyone",
