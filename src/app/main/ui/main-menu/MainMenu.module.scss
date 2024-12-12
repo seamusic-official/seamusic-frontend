@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  position: fixed;
+  top: 156px;
+  left: 50px;
 }
 .menuNav {
   display: flex;

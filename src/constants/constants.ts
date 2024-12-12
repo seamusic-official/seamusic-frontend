@@ -26,42 +26,6 @@ export const TEXT_AUTH = {
   form_sign_up: "Sign up",
 };
 
-// export const MAIN_MENU_ITEMS: MainMenuItems = {
-//   menu_main_items : [
-//     {
-//         id: "001",
-//         text: "Home",
-//         img: imgHomeImage
-//     },
-//     {
-//         id: "002",
-//         text: "Messages",
-//         img: imgMessagesImage
-//     },
-//     {
-//         id: "003",
-//         text: "Dashboard",
-//         img: imgDashboardImage
-//     },
-//     {
-//         id: "004",
-//         text: "Playlists",
-//         img: imgPlaylistsImage
-//     }
-//   ],
-//   menu_settings_items : [
-//     {
-//         id: "005",
-//         text: "Settings",
-//         img: imgSettingsImage
-//     },
-//     {
-//         id: "006",
-//         text: "Log out",
-//         img: imgLogoutImage
-//     }
-//   ]
-// };
 export const MAIN_MENU_ITEMS: MainMenuItems = {
   menu_main_items : [
     {
