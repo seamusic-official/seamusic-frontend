@@ -5,6 +5,6 @@ export const metadata: Metadata = {
 	title: 'Auth'
 }
 
-export default function AuthPage() {
+export default function Page() {
 	return <Auth />
 }

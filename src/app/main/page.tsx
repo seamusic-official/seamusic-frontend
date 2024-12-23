@@ -5,6 +5,6 @@ export const metadata: Metadata = {
 	title: 'Main'
 }
 
-export default function MainPage() {
+export default function Page() {
 	return <Main />
 }
