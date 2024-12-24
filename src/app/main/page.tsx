@@ -1,5 +1,5 @@
+import { Main } from '@/pages/main/Main';
 import type { Metadata } from 'next';
-import { Main } from './Main';
 
 export const metadata: Metadata = {
 	title: 'Main'
