@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link';
 import styles from './Divider.module.scss';
 import { TEXT_AUTH } from '@/constants/constants';

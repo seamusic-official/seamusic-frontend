@@ -1,5 +1,3 @@
-'use client'
-
 import { CONTENT_TOP_LEFT_IMAGES, TAGS } from '@/constants/constants';
 import styles from './ContentTopLeft.module.scss';
 import { Tag } from '../tag/Tag';

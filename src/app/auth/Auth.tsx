@@ -1,5 +1,3 @@
-'use client'
-
 import styles from './Auth.module.scss';
 import { AuthForm } from './ui/auth-form/AuthForm';
 import { AuthLeftBlock } from './ui/auth-left-block/AuthLeftBlock';

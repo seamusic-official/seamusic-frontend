@@ -1,5 +1,3 @@
-'use client'
-
 import { MenuItemDataType, MenuItemType } from '@/shared/types/types';
 import styles from './NavItem.module.scss';
 import Image, { StaticImageData } from 'next/image';

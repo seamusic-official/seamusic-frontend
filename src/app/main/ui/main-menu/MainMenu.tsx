@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image';
 import navImgSrc from '@/shared/assets/main/Frame 30.png';
 import styles from './MainMenu.module.scss';

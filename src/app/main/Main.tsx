@@ -1,5 +1,3 @@
-'use client'
-
 import styles from './Main.module.scss';
 import { ContentTop } from './ui/content-top/ContentTop';
 import { MainHeader } from './ui/main-header/MainHeader';

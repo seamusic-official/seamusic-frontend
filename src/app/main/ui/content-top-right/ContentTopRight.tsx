@@ -1,5 +1,3 @@
-'use client'
-
 import styles from './ContentTopRight.module.scss';
 
 export function ContentTopRight() {

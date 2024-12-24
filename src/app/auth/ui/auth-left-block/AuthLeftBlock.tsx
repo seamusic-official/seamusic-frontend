@@ -1,5 +1,3 @@
-'use client'
-
 import styles from './AuthLeftBlock.module.scss';
 import Image from 'next/image';
 import imgTopLeftSrc from '@/shared/assets/auth/ContentStadium.png';

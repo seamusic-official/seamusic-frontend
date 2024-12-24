@@ -1,5 +1,3 @@
-'use client'
-
 import { IdValue } from '@/shared/types/types';
 import styles from './Tag.module.scss';
 
