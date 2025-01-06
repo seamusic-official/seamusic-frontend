@@ -1,22 +1,22 @@
-import styles from './MainHeader.module.scss';
+import s from './MainHeader.module.scss';
 
 export function MainHeader() {
   return (
-    <div className={styles.mainHeader}>
-      <div className={styles.mainHeaderSearch}>
+    <div className={s.mainHeader}>
+      <div className={s.mainHeaderSearch}>
         <input
-          className={styles.headerSearch}
+          className={s.headerSearch}
           type='text'
           placeholder='Search'
         />
-        <div className={styles.searchLogo} />
+        <div className={s.searchLogo} />
       </div>
-      <div className={styles.mainHeaderNav}>
-        <div className={styles.navBell} />
-        <div className={styles.navAvatar}>
-          <div className={styles.avatarName}>Sam</div>
-          <div className={styles.avatarArrow} />
-          <div className={styles.avatarFoto} />
+      <div className={s.mainHeaderNav}>
+        <div className={s.navBell} />
+        <div className={s.navAvatar}>
+          <div className={s.avatarName}>Sam</div>
+          <div className={s.avatarArrow} />
+          <div className={s.avatarFoto} />
         </div>
       </div>
     </div>

@@ -1,45 +1,45 @@
 import Link from 'next/link';
-import styles from './AuthForm.module.scss';
+import s from './AuthForm.module.scss';
 import { TEXT_AUTH } from '@/constants/constants';
 import { Divider } from '@/shared/ui';
 
 export function AuthForm() {
 	return (
-      <form className={styles.form}>
-        <div className={styles.formTitle}>
-          <div className={styles.titleLeft}>{TEXT_AUTH.form_sign_in}</div>
-          <div className={styles.titleRight}>{TEXT_AUTH.form_text_logo}</div>
+      <form className={s.form}>
+        <div className={s.formTitle}>
+          <div className={s.titleLeft}>{TEXT_AUTH.form_sign_in}</div>
+          <div className={s.titleRight}>{TEXT_AUTH.form_text_logo}</div>
         </div>
-        <div className={styles.loginBlock}>
+        <div className={s.loginBlock}>
           <input
-            className={styles.formInput}
+            className={s.formInput}
             type="text"
             placeholder={TEXT_AUTH.form_google}
           />
           <input
-            className={styles.formInput}
+            className={s.formInput}
             type="text"
             placeholder={TEXT_AUTH.form_spotify}
           />
         </div>
         <Divider />
-        <div className={styles.loginBlock}>
-          <div className={styles.loginInput}>
-            <div className={styles.inputHeader}>{TEXT_AUTH.form_email}</div>
+        <div className={s.loginBlock}>
+          <div className={s.loginInput}>
+            <div className={s.inputHeader}>{TEXT_AUTH.form_email}</div>
             <input
-              className={styles.formInput}
+              className={s.formInput}
               type="text"
               placeholder=''
             />
           </div>
-          <div className={styles.loginInput}>
-            <div className={styles.inputHeader}>{TEXT_AUTH.form_password}</div>
+          <div className={s.loginInput}>
+            <div className={s.inputHeader}>{TEXT_AUTH.form_password}</div>
             <input
-              className={styles.formInput}
+              className={s.formInput}
               type="text"
               placeholder=''
             />
-            <div className={styles.inputFooter}>
+            <div className={s.inputFooter}>
                 <Link href="/">
                   {TEXT_AUTH.form_forget}
                 </Link>
@@ -47,11 +47,11 @@ export function AuthForm() {
           </div>
         </div>
         <Link href="/">
-          <button className={styles.btnAuth} role='presentation'>
+          <button className={s.btnAuth} role='presentation'>
             {TEXT_AUTH.form_sign_in}
           </button>
         </Link>
-        <div className={styles.signUpLine}>
+        <div className={s.signUpLine}>
           <div>{TEXT_AUTH.form_registration}</div>
           <Link href="/">{TEXT_AUTH.form_sign_up}</Link>
         </div>

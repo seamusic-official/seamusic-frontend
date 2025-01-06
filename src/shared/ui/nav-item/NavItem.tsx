@@ -1,6 +1,6 @@
 "use client"
 
-import styles from './NavItem.module.scss';
+import s from './NavItem.module.scss';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -30,7 +30,7 @@ export function NavItem({ data }: MenuItemType) {
 
   return (
     <div
-      className={styles.navItem}
+      className={s.navItem}
       onMouseEnter={handlerIsCurElHover}
       onMouseLeave={handlerIsCurElHover}
     >
@@ -38,9 +38,9 @@ export function NavItem({ data }: MenuItemType) {
           src={curImgSrc()}
           alt=""
           role="presentation"
-					className={styles.imgTopLeft}
+					className={s.imgTopLeft}
         />
-      <Link href='/' className={styles.navItemText}>
+      <Link href='/' className={s.navItemText}>
         {data.text}
       </Link>
     </div>

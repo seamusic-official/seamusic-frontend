@@ -1,4 +1,4 @@
-import styles from './Tag.module.scss';
+import s from './Tag.module.scss';
 
 export type IdValue = {
   id: string,
@@ -7,6 +7,6 @@ export type IdValue = {
 
 export function Tag({ props }: { props: IdValue }) {
   return (
-    <div className={styles.tag}>{`#${props.value}`}</div>
+    <div className={s.tag}>{`#${props.value}`}</div>
   )
 }

@@ -1,22 +1,22 @@
 import { CONTENT_TOP_LEFT_IMAGES, TAGS } from '@/constants/constants';
-import styles from './ContentTopLeft.module.scss';
+import s from './ContentTopLeft.module.scss';
 import { Tag, TopImage } from '@/shared/ui';
 
 export function ContentTopLeft() {
   return (
-    <div className={styles.contentTopLeft}>
-      <div className={styles.blockText}>
-        <div className={styles.blockTitle}>
-          <div className={styles.title}>Find inspiration</div>
-          <div className={styles.desription}>Today’s theme</div>
+    <div className={s.contentTopLeft}>
+      <div className={s.blockText}>
+        <div className={s.blockTitle}>
+          <div className={s.title}>Find inspiration</div>
+          <div className={s.desription}>Today’s theme</div>
         </div>
-      <div className={styles.blockTags}>
+      <div className={s.blockTags}>
         {TAGS.contentTopLeftTags.map((el) => (
           <Tag key={el.id} props={el} />
         ))}
       </div>
       </div>
-      <div className={styles.blockImages}>
+      <div className={s.blockImages}>
         {CONTENT_TOP_LEFT_IMAGES.map((el) => (
           <TopImage key={el.id} props={el.data} />
         ))}

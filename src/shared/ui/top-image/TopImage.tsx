@@ -1,20 +1,20 @@
 import Image from 'next/image';
-import styles from './TopImage.module.scss';
+import s from './TopImage.module.scss';
 import { ImgData } from '@/constants/constants';
 
 export function TopImage({ props }: { props: ImgData }) {
   return (
-    <div className={styles.topImage}>
+    <div className={s.topImage}>
       <Image
           src={props.image}
           alt=""
           role="presentation"
-					className={styles.image}
+					className={s.image}
         />
-        <div className={styles.topImageTextWrapper}>
-          <div className={styles.topImageText}>{props.value}</div>
+        <div className={s.topImageTextWrapper}>
+          <div className={s.topImageText}>{props.value}</div>
         </div>
-        <div className={styles.arrowTop} />
+        <div className={s.arrowTop} />
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import { AuthForm, AuthLeftBlock } from '@/shared/components';
-import styles from './Auth.module.scss';
+import s from './Auth.module.scss';
 
 export function Auth() {
 	return (
-    <div className={styles.auth}>
+    <div className={s.auth}>
 		  <AuthLeftBlock />
       <AuthForm />
     </div>
