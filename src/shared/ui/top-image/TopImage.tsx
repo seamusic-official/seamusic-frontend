@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './TopImage.module.scss';
-import { ImgData } from '@/shared/types/types';
+import { ImgData } from '@/constants/constants';
 
 export function TopImage({ props }: { props: ImgData }) {
   return (

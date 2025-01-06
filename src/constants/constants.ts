@@ -1,4 +1,3 @@
-import { MainMenuItems, TagsType, TopImages } from "@/shared/types/types";
 import imgHomeImage from '@/shared/assets/main/home_line.svg';
 import imgHomeImageWhite from '@/shared/assets/main/home_line_white.svg';
 import imgMessagesImage from '@/shared/assets/main/messages_line.svg';
@@ -13,6 +12,27 @@ import imgLogoutImage from '@/shared/assets/main/logout_line.svg';
 import imgLogoutImageWhite from '@/shared/assets/main/logout_line_white.svg';
 import img001 from '@/shared/assets/main/foto001.png';
 import img002 from '@/shared/assets/main/foto002.png';
+import { MenuItemType } from "@/shared/ui/nav-item/NavItem";
+import { IdValue } from "@/shared/ui/tag/Tag";
+import { StaticImageData } from 'next/image';
+
+export type MainMenuItems = {
+  menu_main_items: Array<MenuItemType>,
+  menu_settings_items: Array<MenuItemType>
+};
+
+export type TagsType = Record<string, IdValue[]>;
+
+export type ImgData = {
+  id: string;
+  value: string;
+  image: StaticImageData;
+}
+
+export type TopImages = {
+  id: string;
+  data: ImgData;
+};
 
 export const TEXT_AUTH = {
   left_title: "Self-expression for everyone",
