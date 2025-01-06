@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './AuthForm.module.scss';
 import { TEXT_AUTH } from '@/constants/constants';
-import { Divider } from '@/components/diviider/Divider';
+import { Divider } from '@/shared/ui';
 
 export function AuthForm() {
 	return (

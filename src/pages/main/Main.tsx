@@ -1,8 +1,5 @@
+import { ContentTop, MainHeader, MainLogo, MainMenu } from '@/shared/components';
 import styles from './Main.module.scss';
-import { ContentTop } from './ui/content-top/ContentTop';
-import { MainHeader } from './ui/main-header/MainHeader';
-import { MainLogo } from './ui/main-logo/MainLogo';
-import { MainMenu } from './ui/main-menu/MainMenu';
 
 export function Main() {
   return (

@@ -1,7 +1,6 @@
 import { CONTENT_TOP_LEFT_IMAGES, TAGS } from '@/constants/constants';
 import styles from './ContentTopLeft.module.scss';
-import { Tag } from '../tag/Tag';
-import { TopImage } from '../top-image/TopImage';
+import { Tag, TopImage } from '@/shared/ui';
 
 export function ContentTopLeft() {
   return (
