@@ -6,3 +6,4 @@ export { ContentTopRight } from './content-top-right/ContentTopRight';
 export { MainHeader } from './main-header/MainHeader';
 export { MainLogo } from './main-logo/MainLogo';
 export { MainMenu } from './main-menu/MainMenu';
+export { ContentTracks } from './content-tracks/ContentTracks';

@@ -1,4 +1,4 @@
-import { ContentTop, MainHeader, MainLogo, MainMenu } from '@/shared/components';
+import { ContentTop, ContentTracks, MainHeader, MainLogo, MainMenu } from '@/shared/components';
 import s from './Main.module.scss';
 
 export function Main() {
@@ -9,7 +9,7 @@ export function Main() {
       <MainMenu />
       <div className={s.mainContent}>
         <ContentTop />
-        <div className={s.contentTracks}>contentTracks</div>
+        <ContentTracks />
         <div className={s.contentArtists}>contentArtists</div>
         <div className={s.contentProducers}>contentProducers</div>
         <div className={s.contentBeats}>contentBeats</div>
