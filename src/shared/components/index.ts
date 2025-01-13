@@ -1,4 +1,4 @@
-export { AuthForm } from './auth-form/AuthForm';
+export { LoginForm } from './login-form/LoginForm';
 export { AuthLeftBlock } from './auth-left-block/AuthLeftBlock';
 export { ContentTop } from './content-top/ContentTop';
 export { ContentTopLeft } from './content-top-left/ContentTopLeft';

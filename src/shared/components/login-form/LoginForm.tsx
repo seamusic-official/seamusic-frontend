@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import s from './AuthForm.module.scss';
+import s from './LoginForm.module.scss';
 import { TEXT_AUTH } from '@/constants/constants';
 import { Divider } from '@/shared/ui';
 
-export function AuthForm() {
+export function LoginForm() {
 	return (
       <form className={s.form}>
         <div className={s.formTitle}>
