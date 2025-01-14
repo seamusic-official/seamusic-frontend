@@ -7,8 +7,8 @@ export function LoginForm() {
 	return (
       <form className={s.form}>
         <div className={s.formTitle}>
-          <div className={s.titleLeft}>{TEXT_AUTH.form_sign_in}</div>
-          <div className={s.titleRight}>{TEXT_AUTH.form_text_logo}</div>
+          <div className={s.titleLeft}>{TEXT_AUTH.form_signIn}</div>
+          <div className={s.titleRight}>{TEXT_AUTH.form_textLogo}</div>
         </div>
         <div className={s.loginBlock}>
           <input
@@ -48,12 +48,12 @@ export function LoginForm() {
         </div>
         <Link href="/">
           <button className={s.btnAuth} role='presentation'>
-            {TEXT_AUTH.form_sign_in}
+            {TEXT_AUTH.form_signIn}
           </button>
         </Link>
         <div className={s.signUpLine}>
           <div>{TEXT_AUTH.form_registration}</div>
-          <Link href="/">{TEXT_AUTH.form_sign_up}</Link>
+          <Link href="/register" className={s.linkUnderline}>{TEXT_AUTH.form_signUp}</Link>
         </div>
       </form>
 	)

@@ -29,10 +29,10 @@
     color: #fff;
   }
 }
-.loginBlock {
+.registerBlock {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 .formInput {
   border: 1px solid #fff;
@@ -64,8 +64,34 @@
     margin-bottom: 5px;
   }
   .inputFooter {
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-top: 8px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    color: #747474;
+  }
+}
+.nextStep {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-top: 88px;
+
+  .nextBtn {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 131%;
+    color: #fff;
+
+    cursor: pointer;
   }
 }
 .btnAuth {

@@ -36,8 +36,8 @@ export type TopImages = {
 
 export const TEXT_AUTH = {
   left_title: "Self-expression for everyone",
-  form_sign_in: "Sign in",
-  form_text_logo: "SeaMusic",
+  form_signIn: "Sign in",
+  form_textLogo: "SeaMusic",
   form_google: "Continue with Google",
   form_spotify: "Continue with Spotify",
   form_divider: "OR",
@@ -45,7 +45,12 @@ export const TEXT_AUTH = {
   form_password: "Password",
   form_forget: "Forget your password",
   form_registration: "Don’t have an account?",
-  form_sign_up: "Sign up",
+  form_signUp: "Sign up",
+  form_userName: "User Name",
+  form_passwordTips: "Use 8 or more characters with a mix of letters, numbers & symbols",
+  form_passwordConfirm: "Confirm your password",
+  form_login: "Already have an account? ",
+  form_lastStep: "Last Step",
 };
 
 export const MAIN_MENU_ITEMS: MainMenuItems = {
