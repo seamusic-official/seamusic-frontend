@@ -1,4 +1,4 @@
-import { ContentTop, ContentTracks, MainHeader, MainLogo, MainMenu } from '@/shared/components';
+import { ContentTop, ContentTracks, MainHeader, MainLogo, MainMenu } from '@/widgets';
 import s from './Main.module.scss';
 
 export function Main() {

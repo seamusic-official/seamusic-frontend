@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import s from './RegisterForm.module.scss';
-import { AUTH_FORM_TITLE, PREFER_TEXT, TEXT_AUTH } from '@/constants/constants';
-import { BtnBack, FormTitle, PreferItem } from '@/shared/ui';
 import { useState } from 'react';
+import { BtnBack, FormTitle, PreferItem } from '@/shared/ui';
+import { AUTH_FORM_TITLE, PREFER_TEXT, TEXT_AUTH } from '@/shared/constants';
 
 export function RegisterForm() {
   const [step, setStep] = useState(1);

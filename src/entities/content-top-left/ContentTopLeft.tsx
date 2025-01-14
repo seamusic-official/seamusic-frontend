@@ -1,4 +1,4 @@
-import { CONTENT_TOP_LEFT_IMAGES, TAGS } from '@/constants/constants';
+import { CONTENT_TOP_LEFT_IMAGES, TAGS } from '@/shared/constants';
 import s from './ContentTopLeft.module.scss';
 import { Tag, TopImage } from '@/shared/ui';
 

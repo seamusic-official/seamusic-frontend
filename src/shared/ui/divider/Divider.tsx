@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import s from './Divider.module.scss';
-import { TEXT_AUTH } from '@/constants/constants';
+import { TEXT_AUTH } from '@/shared/constants';
 
 export function Divider() {
 	return (

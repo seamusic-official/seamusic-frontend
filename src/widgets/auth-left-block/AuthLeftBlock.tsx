@@ -5,7 +5,7 @@ import imgTopRighttSrc from '@/shared/assets/auth/ContentBiilie.png';
 import imgBottomLefTopSrc from '@/shared/assets/auth/ContentGirl.png';
 import imgBottomLefBottomSrc from '@/shared/assets/auth/Logo.png';
 import imgBottomRightBottomSrc from '@/shared/assets/auth/ContentGlassEffect.png';
-import { TEXT_AUTH } from '@/constants/constants';
+import { TEXT_AUTH } from '@/shared/constants';
 
 export function AuthLeftBlock() {
 	return (

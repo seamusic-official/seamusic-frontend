@@ -1,6 +1,5 @@
-import { AuthLeftBlock } from '@/shared/components';
+import { AuthLeftBlock, RegisterForm } from '@/widgets';
 import s from './Register.module.scss';
-import { RegisterForm } from '@/shared/components/register-form/RegisterForm';
 
 export function Register() {
 	return (

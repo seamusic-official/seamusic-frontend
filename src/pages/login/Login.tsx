@@ -1,6 +1,5 @@
-import { AuthLeftBlock } from '@/shared/components';
+import { AuthLeftBlock, LoginForm } from '@/widgets';
 import s from './Login.module.scss';
-import { LoginForm } from '@/shared/components/login-form/LoginForm';
 
 export function Login() {
 	return (

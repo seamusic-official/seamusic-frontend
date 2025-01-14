@@ -12,9 +12,9 @@ import imgLogoutImage from '@/shared/assets/main/logout_line.svg';
 import imgLogoutImageWhite from '@/shared/assets/main/logout_line_white.svg';
 import img001 from '@/shared/assets/main/foto001.png';
 import img002 from '@/shared/assets/main/foto002.png';
-import { MenuItemType } from "@/shared/ui/nav-item/NavItem";
-import { IdValue } from "@/shared/ui/tag/Tag";
 import { StaticImageData } from 'next/image';
+import { MenuItemType } from '../ui/nav-item/NavItem';
+import { IdValue } from '../ui/tag/Tag';
 
 export type MainMenuItems = {
   menu_main_items: Array<MenuItemType>,

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import navImgSrc from '@/shared/assets/main/Frame 30.png';
 import s from './MainMenu.module.scss';
-import { MAIN_MENU_ITEMS } from '@/constants/constants';
+import { MAIN_MENU_ITEMS } from '@/shared/constants';
 import { NavItem } from '@/shared/ui';
 
 export function MainMenu() {

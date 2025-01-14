@@ -1,5 +1,4 @@
-import { ContentTopLeft } from '../content-top-left/ContentTopLeft';
-import { ContentTopRight } from '../content-top-right/ContentTopRight';
+import { ContentTopLeft, ContentTopRight } from '@/entities';
 import s from './ContentTop.module.scss';
 
 export function ContentTop() {

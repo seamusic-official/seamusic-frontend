@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import s from './LoginForm.module.scss';
-import { AUTH_FORM_TITLE, TEXT_AUTH } from '@/constants/constants';
 import { Divider, FormTitle } from '@/shared/ui';
+import { AUTH_FORM_TITLE, TEXT_AUTH } from '@/shared/constants';
 
 export function LoginForm() {
 	return (
