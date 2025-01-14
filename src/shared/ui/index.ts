@@ -4,3 +4,6 @@ export { Tag } from './tag/Tag';
 export { TopImage } from './top-image/TopImage';
 export { ContentTitle } from './content-title/ContentTitle';
 export { TrackItem } from './track-item/TrackItem';
+export { FormTitle } from './form-title/FormTitle';
+export { BtnBack } from './btn-back/BtnBack';
+export { PreferItem } from './prefer-item/PreferItem';

@@ -51,7 +51,44 @@ export const TEXT_AUTH = {
   form_passwordConfirm: "Confirm your password",
   form_login: "Already have an account? ",
   form_lastStep: "Last Step",
+  form_roleTitle: "Who are you?",
+  form_preferTitle: "What do you prefer in music?",
+  form_termsText: "By creating an account, I agree to our ",
+  form_terms: "Terms of use ",
+  form_termsAnd: "and ",
+  form_termsPrivacyPolicy: "Privacy Policy ",
 };
+
+export const AUTH_FORM_TITLE = {
+  loginFormData: {
+    left: TEXT_AUTH.form_signIn,
+    right: TEXT_AUTH.form_textLogo,
+  },
+  registerFormStep1Data: {
+    left: TEXT_AUTH.form_signUp,
+    right: TEXT_AUTH.form_textLogo,
+  },
+};
+
+export const PREFER_TEXT = [
+  'Deep house',
+  'Trap',
+  'Minimal',
+  'Indie rock',
+  'Metal',
+  'Mitol',
+  'Funk',
+  'Electronica',
+  'Rock',
+  'Chill-wave',
+  'NU Disco',
+  'NE Disco',
+  'Acoustic',
+  'Folk',
+  'Lo-fi',
+  'Indie-pop',
+  'Indee-pop',
+];
 
 export const MAIN_MENU_ITEMS: MainMenuItems = {
   menu_main_items : [

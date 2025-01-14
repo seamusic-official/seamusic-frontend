@@ -1,15 +1,12 @@
 import Link from 'next/link';
 import s from './LoginForm.module.scss';
-import { TEXT_AUTH } from '@/constants/constants';
-import { Divider } from '@/shared/ui';
+import { AUTH_FORM_TITLE, TEXT_AUTH } from '@/constants/constants';
+import { Divider, FormTitle } from '@/shared/ui';
 
 export function LoginForm() {
 	return (
       <form className={s.form}>
-        <div className={s.formTitle}>
-          <div className={s.titleLeft}>{TEXT_AUTH.form_signIn}</div>
-          <div className={s.titleRight}>{TEXT_AUTH.form_textLogo}</div>
-        </div>
+        <FormTitle data={AUTH_FORM_TITLE.loginFormData} />
         <div className={s.loginBlock}>
           <input
             className={s.formInput}
