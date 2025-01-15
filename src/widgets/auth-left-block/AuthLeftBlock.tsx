@@ -5,7 +5,6 @@ import imgTopRighttSrc from '@/shared/assets/auth/ContentBiilie.png';
 import imgBottomLefTopSrc from '@/shared/assets/auth/ContentGirl.png';
 import imgBottomLefBottomSrc from '@/shared/assets/auth/Logo.png';
 import imgBottomRightBottomSrc from '@/shared/assets/auth/ContentGlassEffect.png';
-import { TEXT_AUTH } from '@/shared/constants';
 
 export function AuthLeftBlock() {
 	return (
@@ -24,7 +23,7 @@ export function AuthLeftBlock() {
 					className={s.imgTopRight}
         />
 			</div>
-      <div className={s.center}>{TEXT_AUTH.left_title}</div>
+      <div className={s.center}>Self-expression for everyone</div>
       <div className={s.bottom}>
 				<div className={s.bottomLeft}>
 				  <Image

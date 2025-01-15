@@ -4,7 +4,6 @@ import Link from 'next/link';
 import s from './RegisterForm.module.scss';
 import { useState } from 'react';
 import { BtnBack, FormTitle, PreferItem } from '@/shared/ui';
-import { AUTH_FORM_TITLE, TEXT_AUTH } from '@/shared/constants';
 
 const PREFER_TEXT = [
   'Deep house',
@@ -36,32 +35,32 @@ export function RegisterForm() {
     <form className={s.form}>
       {step === 1 && (
         <>
-          <FormTitle data={AUTH_FORM_TITLE.registerFormStep1Data} />
+          <FormTitle data={{ left: 'Sign up', right: 'SeaMusic' }} />
           <div className={s.registerBlock}>
             <div className={s.loginInput}>
-              <div className={s.inputHeader}>{TEXT_AUTH.form_userName}</div>
+              <div className={s.inputHeader}>{'User Name'}</div>
               <input
                 className={s.formInput}
                 type="text"
               />
             </div>
             <div className={s.loginInput}>
-              <div className={s.inputHeader}>{TEXT_AUTH.form_email}</div>
+              <div className={s.inputHeader}>{'Email adress'}</div>
               <input
                 className={s.formInput}
                 type="text"
               />
             </div>
             <div className={s.loginInput}>
-              <div className={s.inputHeader}>{TEXT_AUTH.form_password}</div>
+              <div className={s.inputHeader}>{'Password'}</div>
               <input
                 className={s.formInput}
                 type="password"
               />
-              <div className={s.inputFooter}>{TEXT_AUTH.form_passwordTips}</div>
+              <div className={s.inputFooter}>{'Use 8 or more characters with a mix of letters, numbers & symbols'}</div>
             </div>
             <div className={s.loginInput}>
-              <div className={s.inputHeader}>{TEXT_AUTH.form_passwordConfirm}</div>
+              <div className={s.inputHeader}>{'Confirm your password'}</div>
               <input
                 className={s.formInput}
                 type="password"
@@ -70,7 +69,7 @@ export function RegisterForm() {
           </div>
           <div className={s.nextStep}>
             <div className={s.nextBtn} onClick={setNextStep}>
-              <div className={s.left}>{TEXT_AUTH.form_lastStep}</div>
+              <div className={s.left}>{'Last Step'}</div>
               <svg width="15" height="28" viewBox="0 0 15 28"
                 fill="none" xmlns="http://www.w3.org/2000/svg"
               >
@@ -80,8 +79,8 @@ export function RegisterForm() {
               </svg>
             </div>
             <div className={s.signUpLine}>
-              <div>{TEXT_AUTH.form_login}</div>
-              <Link href="/login" className={s.linkUnderline}>{TEXT_AUTH.form_signIn}</Link>
+              <div>{'Already have an account? '}</div>
+              <Link href="/login" className={s.linkUnderline}>{'Sign in'}</Link>
             </div>
           </div>
         </>
@@ -92,10 +91,10 @@ export function RegisterForm() {
             <div onClick={setPrevStep} className={s.btnWrapper}>
               <BtnBack />
             </div>
-            <div className={s.logo}>{TEXT_AUTH.form_textLogo}</div>
+            <div className={s.logo}>{'SeaMusic'}</div>
           </div>
           <div className={s.roleWrapper}>
-            <div className={s.roleTitle}>{TEXT_AUTH.form_roleTitle}</div>
+            <div className={s.roleTitle}>{'Who are you?'}</div>
             <div className={s.role}>
               <div className={`${s.roleItem} ${s.active}`}>Artist</div>
               <div className={s.roleItem}>Producer</div>
@@ -103,7 +102,7 @@ export function RegisterForm() {
             </div>
           </div>
           <div className={s.preferWrapper}>
-            <div className={s.preferTitle}>{TEXT_AUTH.form_preferTitle}</div>
+            <div className={s.preferTitle}>{'What do you prefer in music?'}</div>
             <div className={s.prefer}>
               {PREFER_TEXT.map((el, index) => (
                 <PreferItem key={index} name={el} />
@@ -113,20 +112,20 @@ export function RegisterForm() {
           <div className={s.termsWrapper}>
             <input type="checkbox" className={s.termsCheckbox} />
             <div className={s.termTextWrapper}>
-              {TEXT_AUTH.form_termsText}
-              <Link href="/terms" className={s.termLink}>{TEXT_AUTH.form_terms}</Link>
-              {TEXT_AUTH.form_termsAnd}
-              <Link href="/priacy-policy" className={s.termLink}>{TEXT_AUTH.form_termsPrivacyPolicy}</Link>
+              {'By creating an account, I agree to our '}
+              <Link href="/terms" className={s.termLink}>{'Terms of use '}</Link>
+              {'and '}
+              <Link href="/priacy-policy" className={s.termLink}>{'Privacy Policy '}</Link>
             </div>
           </div>
           <Link href="/">
             <button className={s.btnAuth} role='presentation'>
-              {TEXT_AUTH.form_signUp}
+              {'Sign up'}
             </button>
           </Link>
           <div className={s.signUpLine}>
-            <div>{TEXT_AUTH.form_login}</div>
-            <Link href="/login" className={s.linkUnderline}>{TEXT_AUTH.form_signIn}</Link>
+            <div>{'Already have an account? '}</div>
+            <Link href="/login" className={s.linkUnderline}>{'Sign in'}</Link>
           </div>
         </>
       )}

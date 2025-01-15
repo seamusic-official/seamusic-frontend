@@ -1,28 +1,27 @@
 import Link from 'next/link';
 import s from './LoginForm.module.scss';
 import { Divider, FormTitle } from '@/shared/ui';
-import { AUTH_FORM_TITLE, TEXT_AUTH } from '@/shared/constants';
 
 export function LoginForm() {
 	return (
       <form className={s.form}>
-        <FormTitle data={AUTH_FORM_TITLE.loginFormData} />
+        <FormTitle data={{left: 'Sign in', right: 'SeaMusic'}} />
         <div className={s.loginBlock}>
           <input
             className={s.formInput}
             type="text"
-            placeholder={TEXT_AUTH.form_google}
+            placeholder={'Continue with Google'}
           />
           <input
             className={s.formInput}
             type="text"
-            placeholder={TEXT_AUTH.form_spotify}
+            placeholder={'Continue with Spotify'}
           />
         </div>
-        <Divider text={TEXT_AUTH.form_divider} />
+        <Divider text={'OR'} />
         <div className={s.loginBlock}>
           <div className={s.loginInput}>
-            <div className={s.inputHeader}>{TEXT_AUTH.form_email}</div>
+            <div className={s.inputHeader}>{'Email adress'}</div>
             <input
               className={s.formInput}
               type="text"
@@ -30,7 +29,7 @@ export function LoginForm() {
             />
           </div>
           <div className={s.loginInput}>
-            <div className={s.inputHeader}>{TEXT_AUTH.form_password}</div>
+            <div className={s.inputHeader}>{'Password'}</div>
             <input
               className={s.formInput}
               type="text"
@@ -38,19 +37,19 @@ export function LoginForm() {
             />
             <div className={s.inputFooter}>
                 <Link href="/">
-                  {TEXT_AUTH.form_forget}
+                  {'Forget your password'}
                 </Link>
               </div>
           </div>
         </div>
         <Link href="/">
           <button className={s.btnAuth} role='presentation'>
-            {TEXT_AUTH.form_signIn}
+            {'Sign in'}
           </button>
         </Link>
         <div className={s.signUpLine}>
-          <div>{TEXT_AUTH.form_registration}</div>
-          <Link href="/register" className={s.linkUnderline}>{TEXT_AUTH.form_signUp}</Link>
+          <div>{'Don’t have an account?'}</div>
+          <Link href="/register" className={s.linkUnderline}>{'Sign up'}</Link>
         </div>
       </form>
 	)
