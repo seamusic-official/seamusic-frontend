@@ -1,10 +1,10 @@
-import { Main } from '@/pages';
+import { Login } from '@/pages';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Main'
+	title: 'Login'
 }
 
 export default function Page() {
-	return <Main />
+	return <Login />
 }

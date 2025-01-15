@@ -1,23 +1,20 @@
-import styles from './Main.module.scss';
-import { ContentTop } from './ui/content-top/ContentTop';
-import { MainHeader } from './ui/main-header/MainHeader';
-import { MainLogo } from './ui/main-logo/MainLogo';
-import { MainMenu } from './ui/main-menu/MainMenu';
+import { ContentTop, ContentTracks, MainHeader, MainLogo, MainMenu } from '@/widgets';
+import s from './Main.module.scss';
 
 export function Main() {
   return (
-    <div className={styles.main}>
+    <div className={s.main}>
       <MainLogo />
       <MainHeader />
       <MainMenu />
-      <div className={styles.mainContent}>
+      <div className={s.mainContent}>
         <ContentTop />
-        <div className={styles.contentTracks}>contentTracks</div>
-        <div className={styles.contentArtists}>contentArtists</div>
-        <div className={styles.contentProducers}>contentProducers</div>
-        <div className={styles.contentBeats}>contentBeats</div>
-        <div className={styles.contentAlbums}>contentAlbums</div>
-        <div className={styles.contentPlaylists}>contentPlaylists</div>
+        <ContentTracks />
+        <div className={s.contentArtists}>contentArtists</div>
+        <div className={s.contentProducers}>contentProducers</div>
+        <div className={s.contentBeats}>contentBeats</div>
+        <div className={s.contentAlbums}>contentAlbums</div>
+        <div className={s.contentPlaylists}>contentPlaylists</div>
       </div>
     </div>
   )
