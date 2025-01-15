@@ -19,7 +19,7 @@ export function LoginForm() {
             placeholder={TEXT_AUTH.form_spotify}
           />
         </div>
-        <Divider />
+        <Divider text={TEXT_AUTH.form_divider} />
         <div className={s.loginBlock}>
           <div className={s.loginInput}>
             <div className={s.inputHeader}>{TEXT_AUTH.form_email}</div>

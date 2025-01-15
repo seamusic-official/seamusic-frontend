@@ -1,11 +1,11 @@
 import s from './Tag.module.scss';
 
-export type IdValue = {
+type TagProps = {
   id: string,
   value: string
 }
 
-export function Tag({ props }: { props: IdValue }) {
+export function Tag({ props }: { props: TagProps }) {
   return (
     <div className={s.tag}>{`#${props.value}`}</div>
   )

@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import s from './Divider.module.scss';
-import { TEXT_AUTH } from '@/shared/constants';
 
-export function Divider() {
+type DividerProps = {
+  text: string;
+};
+
+export function Divider({ text }: DividerProps) {
 	return (
         <div className={s.formDivider}>
           <div className={s.formLine}></div>
-          <div className={s.dividerText}>{TEXT_AUTH.form_divider}</div>
+          <div className={s.dividerText}>{text}</div>
           <div className={s.formLine}></div>
         </div>
   );
