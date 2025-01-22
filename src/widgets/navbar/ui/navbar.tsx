@@ -49,7 +49,7 @@ export const NavBar = () => {
 				</button>
 			</div>
 
-			<div className="flex justify-between md:flex hidden">
+			<div className="flex justify-between md:flex">
 				<div className="flex">
 					<button className="" onClick={handleGoBack}>
 						<svg
