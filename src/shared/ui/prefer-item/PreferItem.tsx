@@ -1,13 +1,9 @@
 import s from './PreferItem.module.scss';
 
 type PreferItemProps = {
-  name: string;
+	name: string;
 };
 
-export function PreferItem({ name }: PreferItemProps) {
-	return (
-    <div className={s.preferItem}>
-      {name}
-    </div>
-  )
-}
+export const PreferItem = ({ name }: PreferItemProps) => {
+	return <div className={s.preferItem}>{name}</div>;
+};

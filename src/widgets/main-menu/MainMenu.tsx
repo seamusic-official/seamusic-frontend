@@ -17,97 +17,97 @@ import { NavItem } from '@/shared/ui';
 import { MenuItemType } from '@/shared/ui/nav-item/NavItem';
 
 type MainMenuItems = {
-  menu_main_items: Array<MenuItemType>,
-  menu_settings_items: Array<MenuItemType>
+	menuMainItems: Array<MenuItemType>;
+	menuSettingsItems: Array<MenuItemType>;
 };
 
 const MAIN_MENU_ITEMS: MainMenuItems = {
-  menu_main_items : [
-    {
-      id: "001",
-      data: {
-        id: "001",
-        text: "Home",
-        img: imgHomeImage,
-        imgWhite: imgHomeImageWhite,
-      }
-    },
-    {
-      id: "002",
-      data: {
-        id: "002",
-        text: "Messages",
-        img: imgMessagesImage,
-        imgWhite: imgMessagesImageWhite
-      }
-    },
-    {
-      id: "003",
-      data: {
-        id: "003",
-        text: "Dashboard",
-        img: imgDashboardImage,
-        imgWhite: imgDashboardImageWhite
-      }
-    },
-    {
-      id: "004",
-      data: {
-        id: "004",
-        text: "Playlists",
-        img: imgPlaylistsImage,
-        imgWhite: imgPlaylistsImageWhite
-      }
-    }
-  ],
-  menu_settings_items : [
-    {
-      id: "005",
-      data: {
-        id: "005",
-        text: "Settings",
-        img: imgSettingsImage,
-        imgWhite: imgSettingsImageWhite
-      }
-    },
-    {
-      id: "006",
-      data: {
-        id: "006",
-        text: "Log out",
-        img: imgLogoutImage,
-        imgWhite: imgLogoutImageWhite
-      }
-    }
-  ]
+	menuMainItems: [
+		{
+			id: '001',
+			data: {
+				id: '001',
+				text: 'Home',
+				img: imgHomeImage,
+				imgWhite: imgHomeImageWhite,
+			},
+		},
+		{
+			id: '002',
+			data: {
+				id: '002',
+				text: 'Messages',
+				img: imgMessagesImage,
+				imgWhite: imgMessagesImageWhite,
+			},
+		},
+		{
+			id: '003',
+			data: {
+				id: '003',
+				text: 'Dashboard',
+				img: imgDashboardImage,
+				imgWhite: imgDashboardImageWhite,
+			},
+		},
+		{
+			id: '004',
+			data: {
+				id: '004',
+				text: 'Playlists',
+				img: imgPlaylistsImage,
+				imgWhite: imgPlaylistsImageWhite,
+			},
+		},
+	],
+	menuSettingsItems: [
+		{
+			id: '005',
+			data: {
+				id: '005',
+				text: 'Settings',
+				img: imgSettingsImage,
+				imgWhite: imgSettingsImageWhite,
+			},
+		},
+		{
+			id: '006',
+			data: {
+				id: '006',
+				text: 'Log out',
+				img: imgLogoutImage,
+				imgWhite: imgLogoutImageWhite,
+			},
+		},
+	],
 };
 
-export function MainMenu() {
-  return (
-    <div className={s.mainMenu}>
-      <div className={s.menuNav}>
-        <div className={s.navImage}>
-          <Image
-            src={navImgSrc}
-            alt=""
-            role="presentation"
-				  	className={s.imgTop}
-          />
-          <div className={s.navTitleWrapper}>
-            <div className={s.navTitle}>Top release</div>
-          </div>
-        </div>
-        <div className={s.navItems}>
-          {MAIN_MENU_ITEMS.menu_main_items.map((el) => (
-            <NavItem key={el.id} id={el.id} data={el.data} />
-          ))}
-        </div>
-      </div>
-      <div className={s.navItems}>
-        {MAIN_MENU_ITEMS.menu_settings_items.map((el) => (
-          <NavItem key={el.id} id={el.id} data={el.data} />
-        ))}
-      </div>
-    </div>
-  )
-}
+export const MainMenu = () => {
+	return (
+		<div className={s.mainMenu}>
+			<div className={s.menuNav}>
+				<div className={s.navImage}>
+					<Image
+						src={navImgSrc}
+						alt=""
+						role="presentation"
+						className={s.imgTop}
+					/>
+					<div className={s.navTitleWrapper}>
+						<div className={s.navTitle}>Top release</div>
+					</div>
+				</div>
+				<div className={s.navItems}>
+					{MAIN_MENU_ITEMS.menuMainItems.map((el) => (
+						<NavItem key={el.id} id={el.id} data={el.data} />
+					))}
+				</div>
+			</div>
+			<div className={s.navItems}>
+				{MAIN_MENU_ITEMS.menuSettingsItems.map((el) => (
+					<NavItem key={el.id} id={el.id} data={el.data} />
+				))}
+			</div>
+		</div>
+	);
+};

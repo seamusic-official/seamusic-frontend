@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export function Sidebar() {
+export const Sidebar = () => {
 	return (
 		<div className="border-r px-6 hidden md:w-1/5 md:block px-6 py-4 h-full fixed backdrop-blur-lg left-0 border-neutral-800 lg:p-2 bg-gray-200 bg-opacity-5">
 			<div className="text-gray-100 my-2 cursor-pointer">
@@ -172,4 +172,4 @@ export function Sidebar() {
 			</div>
 		</div>
 	);
-}
+};

@@ -1,12 +1,10 @@
-'use client';
-import React, { useRef } from 'react';
 import { Sidebar } from '@/widgets/sidebar';
 import { NavBar } from '@/widgets/navbar';
 import { Footer } from '@/widgets/footer';
 
 type MyComponentProps = React.PropsWithChildren;
 
-export function MainLayout({ children }: MyComponentProps) {
+export const MainLayout = ({ children }: MyComponentProps) => {
 	return (
 		<div className="w-screen max-w-screen-xl overflow-y-auto ">
 			<main className="tracking-tighter">
@@ -21,4 +19,4 @@ export function MainLayout({ children }: MyComponentProps) {
 			</main>
 		</div>
 	);
-}
+};
