@@ -1,8 +1,8 @@
 import s from './ContentTopLeft.module.scss';
 import { Tag, TopImage } from '@/shared/ui';
 import { StaticImageData } from 'next/image';
-import img001 from '@/shared/assets/main/foto001.png';
-import img002 from '@/shared/assets/main/foto002.png';
+import img001 from '@/shared/assets/images/foto001.png';
+import img002 from '@/shared/assets/images/foto002.png';
 
 type IdValue = {
 	id: string;

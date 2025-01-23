@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import imgMain from '@/shared/assets/main/foto003.png';
+import imgMain from '@/shared/assets/images/foto003.png';
 import s from './ContentTopRight.module.scss';
 
 export const ContentTopRight = () => {

@@ -1,10 +1,10 @@
 import s from './AuthLeftBlock.module.scss';
 import Image from 'next/image';
-import imgTopLeftSrc from '@/shared/assets/auth/ContentStadium.png';
-import imgTopRighttSrc from '@/shared/assets/auth/ContentBiilie.png';
-import imgBottomLefTopSrc from '@/shared/assets/auth/ContentGirl.png';
-import imgBottomLefBottomSrc from '@/shared/assets/auth/Logo.png';
-import imgBottomRightBottomSrc from '@/shared/assets/auth/ContentGlassEffect.png';
+import imgTopLeftSrc from '@/shared/assets/images/ContentStadium.png';
+import imgTopRighttSrc from '@/shared/assets/images/ContentBiilie.png';
+import imgBottomLefTopSrc from '@/shared/assets/images/ContentGirl.png';
+import imgBottomLefBottomSrc from '@/shared/assets/icons/Logo.png';
+import imgBottomRightBottomSrc from '@/shared/assets/images/ContentGlassEffect.png';
 
 export const AuthLeftBlock = () => {
 	return (

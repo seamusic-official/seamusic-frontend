@@ -1,6 +1,6 @@
 import { TrackItem, TrackItemType } from '@/shared/ui/track-item/TrackItem';
 import s from './ContentTracks.module.scss';
-import trackItemImg from '@/shared/assets/main/track_item_01.png';
+import trackItemImg from '@/shared/assets/images/track_item_01.png';
 import { ContentTitle } from '@/shared/ui';
 
 const CONTENT_TRACKS = {
