@@ -1,17 +1,17 @@
 import Link from 'next/link';
 
-export function Sidebar() {
+export const Sidebar = () => {
 	return (
-		<div className="border-r px-6 hidden md:w-1/5 md:block px-6 py-4 h-full fixed backdrop-blur-lg left-0 border-neutral-800 lg:p-2 bg-gray-200 bg-opacity-5">
+		<div className="border-r hidden md:w-1/5 md:block px-6 py-4 h-full fixed backdrop-blur-lg left-0 border-neutral-800 lg:p-2 bg-gray-200 bg-opacity-5">
 			<div className="text-gray-100 my-2 cursor-pointer">
 				<h2
 					className="flex items-center mt-1 mb-1 text-white text-3xl capitalize font-extrabold tracking-tighter"
 					id="">
-					<div className="p-2 rounded-full w-8 h-8 mr-2 animate-pulse rounded-full bg-opacity-10 bg-gray-300" />
+					<div className="p-2 w-8 h-8 mr-2 animate-pulse rounded-full bg-opacity-10 bg-gray-300" />
 					<Link href="/">SeaMusic</Link>
 				</h2>
 			</div>
-			<div className="p-2 rounded-lg w-full h-24 mr-2 animate-pulse rounded-full bg-opacity-10 bg-gray-300" />
+			<div className="p-2 w-full h-24 mr-2 animate-pulse rounded-full bg-opacity-10 bg-gray-300" />
 			<button className="text-white hover:text-white flex items-center mt-4">
 				<svg
 					className="mr-4"
@@ -172,4 +172,4 @@ export function Sidebar() {
 			</div>
 		</div>
 	);
-}
+};

@@ -1,7 +1,6 @@
-import React from 'react';
 import { useRouter } from 'next/navigation';
 
-export function NavBar(reference: any) {
+export const NavBar = () => {
 	const navigate = useRouter();
 
 	const handleGoBack = () => {
@@ -12,12 +11,12 @@ export function NavBar(reference: any) {
 		navigate.forward(); // Переход на следующую страницу в истории
 	};
 
-	const toMessage = () => {
-		navigate.push('/messages');
-	};
-	const toDash = () => {
-		navigate.push('/dashboard');
-	};
+	// const toMessage = () => {
+	// 	navigate.push('/messages');
+	// };
+	// const toDash = () => {
+	// 	navigate.push('/dashboard');
+	// };
 
 	return (
 		<div className="mb-4">
@@ -50,7 +49,7 @@ export function NavBar(reference: any) {
 				</button>
 			</div>
 
-			<div className="flex justify-between md:flex hidden">
+			<div className="flex justify-between md:flex">
 				<div className="flex">
 					<button className="" onClick={handleGoBack}>
 						<svg
@@ -83,16 +82,14 @@ export function NavBar(reference: any) {
 				</div>
 				<div className="flex items-center">
 					<div className="m-1">
-						<DefaultButton title="Messages" onClick={toMessage} />
+						{/* <DefaultButton title="Messages" onClick={toMessage} /> */}
 					</div>
 					<div className="m-1 ">
-						<DefaultButton title="Studio" onClick={toDash} />
+						{/* <DefaultButton title="Studio" onClick={toDash} /> */}
 					</div>
-					<div className="ml-4  ">
-						<DropdownMenu />
-					</div>
+					<div className="ml-4  ">{/* <DropdownMenu /> */}</div>
 				</div>
 			</div>
 		</div>
 	);
-}
+};

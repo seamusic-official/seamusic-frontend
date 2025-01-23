@@ -1,17 +1,14 @@
-import React from 'react';
 import { useRouter } from 'next/navigation';
-import { useAppDispatch } from '@/shared/hooks/redux';
-import { clearAuthData } from '@/store/reducers/authSlice';
 
-export function Logout() {
-	const dispatch = useAppDispatch();
+export const Logout = () => {
+	// const dispatch = useAppDispatch();
 	const navigate = useRouter();
 
 	const handleLogout = () => {
 		localStorage.removeItem('accessToken');
 		document.cookie =
 			'refreshToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-		dispatch(clearAuthData());
+		// dispatch(clearAuthData());
 		navigate.push('/auth/login');
 	};
 
@@ -22,4 +19,4 @@ export function Logout() {
 			Logout
 		</a>
 	);
-}
+};
