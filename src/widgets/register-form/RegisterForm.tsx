@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import s from './RegisterForm.module.scss';
 import { useState } from 'react';
-import { BtnBack, FormTitle, PreferItem } from '@/shared/ui';
+import { FormTitle, PreferItem } from '@/shared/ui';
+import { ArrowBtn } from '@/shared/ui/buttons';
 
 const PREFER_TEXT = [
 	'Deep house',
@@ -89,7 +90,7 @@ export const RegisterForm = () => {
 				<>
 					<div className={s.titleWrapper}>
 						<div onClick={setPrevStep} className={s.btnWrapper}>
-							<BtnBack />
+							<ArrowBtn variant="primary" />
 						</div>
 						<div className={s.logo}>{'SeaMusic'}</div>
 					</div>
