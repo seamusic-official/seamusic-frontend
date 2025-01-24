@@ -25,4 +25,5 @@ body {
 	-webkit-touch-callout: none;
 	/* Осторожно относимся к выбору контента */
 	-webkit-user-select: none;
+	background: #161616;
 }

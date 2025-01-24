@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import s from './TrackItem.module.scss';
+import { Checkbox } from '../checkbox/Checkbox';
 
 export type TrackItemType = {
 	number: string;
@@ -53,7 +54,13 @@ export const TrackItem = ({ data }: TrackItemProps) => {
 			<div className={s.album}>{data.album}</div>
 			<div className={s.listens}>{data.listens}</div>
 			<div className={s.playTime}>{data.playTime}</div>
-			<div className={s.like}>{data.like}</div>
+			{/* <div className={s.like}>{data.like}</div> */} 
+			<div className={s.like}>                                          //! это удалить
+				<Checkbox />                                                    //! это удалить
+				<Checkbox figure='round' />                                     //! это удалить
+				<Checkbox filling='empty' />                                    //! это удалить
+				<Checkbox figure='round' filling='empty' />                     //! это удалить
+			</div>
 		</div>
 	);
 };
