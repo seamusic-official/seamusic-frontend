@@ -54,12 +54,12 @@ export const TrackItem = ({ data }: TrackItemProps) => {
 			<div className={s.album}>{data.album}</div>
 			<div className={s.listens}>{data.listens}</div>
 			<div className={s.playTime}>{data.playTime}</div>
-			{/* <div className={s.like}>{data.like}</div> */} 
-			<div className={s.like}>                                          //! это удалить
-				<Checkbox />                                                    //! это удалить
-				<Checkbox figure='round' />                                     //! это удалить
-				<Checkbox filling='empty' />                                    //! это удалить
-				<Checkbox figure='round' filling='empty' />                     //! это удалить
+			{/* <div className={s.like}>{data.like}</div> //! это раскомментировать, нижний див удалить*/}
+			<div className={s.like}>
+				<Checkbox />
+				<Checkbox figure='round' />
+				<Checkbox filling='empty' />
+				<Checkbox figure='round' filling='empty' />
 			</div>
 		</div>
 	);

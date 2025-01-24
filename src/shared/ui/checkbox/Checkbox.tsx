@@ -9,7 +9,7 @@ type Props = {
 };
 
 export const Checkbox = ({ figure, filling }: Props) => {
-	const [isDisabled, setIsDisabled] = useState(true);
+	const [isDisabled, setIsDisabled] = useState(false);
 	const [isChecked, setIsChecked] = useState(false);
 
 	const curStyle = `${s.checkboxInput} ${figure && s[figure]} ${filling && s[filling]}`;
