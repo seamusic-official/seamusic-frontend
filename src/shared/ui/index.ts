@@ -7,3 +7,4 @@ export { TrackItem } from './track-item/TrackItem';
 export { FormTitle } from './form-title/FormTitle';
 export { BtnBack } from './btn-back/BtnBack';
 export { PreferItem } from './prefer-item/PreferItem';
+export { Checkbox } from './checkbox/Checkbox';
