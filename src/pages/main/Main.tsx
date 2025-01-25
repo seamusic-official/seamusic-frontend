@@ -12,7 +12,7 @@ export const Main = () => {
 		<div className={s.main}>
 			<MainLogo />
 			<MainHeader />
-			<MainMenu />
+			{/* <MainMenu /> */}
 			<div className={s.mainContent}>
 				<ContentTop />
 				<ContentTracks />
