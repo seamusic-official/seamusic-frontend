@@ -1,6 +1,5 @@
 .navItem {
 	border-radius: 50px;
-	width: 210px;
 	height: 52px;
 	padding-left: 20px;
 	display: flex;
@@ -20,5 +19,7 @@
 		font-size: 20px;
 		line-height: 140%;
 		color: #616161;
+
+		text-decoration: none;
 	}
 }
