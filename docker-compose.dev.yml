@@ -16,4 +16,4 @@ services:
 
 networks:
   frontend:
-    driver: "bridge"
+    driver: 'bridge'

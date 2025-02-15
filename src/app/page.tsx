@@ -1,15 +1,12 @@
-'use client';
+import { Main } from '@/pages';
+import type { Metadata } from 'next';
 
-import { HelloLayout } from '@/shared/layouts';
+export const metadata: Metadata = {
+	title: 'Main',
+};
 
 const Page = () => {
-	return (
-	<HelloLayout>
-		<div>
-			<h1>Home</h1>
-		</div>
-	</HelloLayout>
-	);
+	return <Main />;
 };
 
 export default Page;

@@ -1,15 +1,15 @@
-import React from 'react';
+import Image from 'next/image';
 
-export function Footer() {
+export const Footer = () => {
 	const year = new Date().getFullYear();
-	
+
 	return (
 		<footer className="">
 			<div className=" w-full p-2 py-6 lg:py-8">
 				<div className="md:flex md:justify-between">
 					<div className="mb-6 md:mb-0">
 						<a href="https://flowbite.com/" className="flex items-center">
-							<img
+							<Image
 								src="https://flowbite.com/docs/images/logo.svg"
 								className="h-8 me-3"
 								alt="FlowBite Logo"
@@ -85,9 +85,8 @@ export function Footer() {
 				<div className="sm:flex sm:items-center sm:justify-between">
 					<span className="text-md font-semibold text-white sm:text-center">
 						<a href="https://flowbite.com/" className="hover:underline">
-						© SeaMusic 
-						</a>
-						{' '}
+							© SeaMusic
+						</a>{' '}
 						{year}. All Rights Reserved.
 					</span>
 					<div className="flex mt-4 sm:justify-center sm:mt-0">
@@ -177,4 +176,4 @@ export function Footer() {
 			</div>
 		</footer>
 	);
-}
+};

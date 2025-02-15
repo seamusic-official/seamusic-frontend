@@ -1,28 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* сброс стандартных стилей */
+@import url('../shared/style/normalize.css');
 
-:root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+/* Подключение шрифтов  */
+@import url('../shared/assets/fonts/fonts.css');
+
+@font-face {
+	src: url(../shared/assets/fonts/OpenSans/OpenSans-Regular.woff);
+	font-family: OpenSans-Regular;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
+html,
+body {
+	height: 100%;
 }
 
 body {
-	color: rgb(var(--foreground-rgb));
-	font-family: 'Montserrat';
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+	display: flex;
+	flex-direction: column;
+	height: max-content;
+	align-items: center;
+	/* Синяя подсветка сливается с фоном */
+	-webkit-tap-highlight-color: transparent;
+	/* Предотвращаем появление контекстного меню на устройствах Apple */
+	-webkit-touch-callout: none;
+	/* Осторожно относимся к выбору контента */
+	-webkit-user-select: none;
+	background: #161616;
 }

@@ -1,0 +1,45 @@
+.contentTopLeft {
+	border-radius: 40px;
+	background: #282828;
+
+	padding: 30px;
+	display: flex;
+	gap: 60px;
+
+	.blockText {
+		display: flex;
+		flex-direction: column;
+		gap: 79px;
+
+		.blockTitle {
+			display: flex;
+			flex-direction: column;
+			gap: 7px;
+
+			.title {
+				font-family: var(--font-family);
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 131%;
+				color: #fff;
+			}
+			.desription {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 140%;
+				color: #fff;
+			}
+		}
+
+		.blockTags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+	}
+	.blockImages {
+		display: flex;
+		gap: 30px;
+	}
+}
