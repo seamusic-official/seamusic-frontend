@@ -11,7 +11,7 @@ export const MainLayout = ({ children }: MyComponentProps) => {
 				<Sidebar />
 				<div className="text-center lg:text-left w-full md:w-4/5 md:absolute md:right-0 relative place-items-center ">
 					<div className="p-4">
-						<NavBar reference="" />
+						<NavBar/>
 						{children}
 						<Footer />
 					</div>
