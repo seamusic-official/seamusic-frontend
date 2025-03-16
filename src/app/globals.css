@@ -12,13 +12,14 @@
 html,
 body {
 	height: 100%;
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	height: max-content;
-	align-items: center;
 	/* Синяя подсветка сливается с фоном */
 	-webkit-tap-highlight-color: transparent;
 	/* Предотвращаем появление контекстного меню на устройствах Apple */
@@ -26,4 +27,6 @@ body {
 	/* Осторожно относимся к выбору контента */
 	-webkit-user-select: none;
 	background: #161616;
+	padding: 0 16px;
+	overflow-x: hidden;
 }
