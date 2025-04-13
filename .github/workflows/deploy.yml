@@ -24,3 +24,12 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
+      - name: Restart service on remote server
+        run: |
+          echo "${{ secrets.SSH_KEY }}" > id_rsa
+          chmod 600 id_rsa
+          ssh -i id_rsa -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd {{secrets.SM_FRONTEND_PATH}} && git pull origin master"
+
+      - name: Clean up
+        run: rm -f id_rsa
