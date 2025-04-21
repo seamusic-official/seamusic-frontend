@@ -10,8 +10,6 @@ COPY . .
 
 RUN npm run build
 
-RUN npm run export
-
 CMD ["npx", "serve@latest", "out"]
 
 EXPOSE 3000
