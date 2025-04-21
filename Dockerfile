@@ -1,8 +1,15 @@
 FROM node:20
 
-COPY . /frontend
 WORKDIR /frontend
+
+COPY package*.json ./
 
 RUN npm install
 
-CMD ["make", "run"]
+COPY . .
+
+RUN npm run build
+
+CMD ["npm", "start"]
+
+EXPOSE 3000
